@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+
+</head>
+<body>
+      <div class="full-container">
+          <div class="side-bar">
+                <div class="user-info">
+                      <img src="./assets/images/avatar.png" alt="display profile"> <span>Susan Snowden</span>
+                 </div>
+                  <div class="task-list">
+                      <ul>
+                          <li><i class="fas fa-calendar-day"></i><a href="">Today</li></a>
+                          <li><img src="./assets/images/week (2).png" alt=""></i><a href="">Next 7 Days</li></a>
+                          <li><img src="./assets/images/checklist.png" alt=""><a href="">Completed</li></a>
+                          <li><i class="fas fa-trash"></i><a href="">Trash</li></a>
+                      </ul> 
+                  </div>
+           </div> 
+             <!--  To do list/activities will be written and saved on this page-->
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-7" style="border-right: 2px black solid;" >
+                      <h3>Today</h3> <span id="bar"><a href=""><i class="fas fa-bars" style="color: #b3b7bd!important;"></i></a></span>
+                      
+                      <!-- More icon with a drop down giving options of 1. delete  2. share  3. print -->
+                      <div class="more">
+                        <div class="dropdown">
+                            <img class="dropdown-toggle"  data-toggle="dropdown"  src="./assets/images/more.png" alt="" />
+                            <ul class="dropdown-menu">
+                              <li><span><i class="fas fa-"></i></span><a href="#">Share</a></li>
+                              <li><a href="#">Print</a></li>
+                              <li><a href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                          
+                      </div>
+
+                      <!-- Add to do list inputbox -->
+                      <div class="input-box">
+                       <input type="text" placeholder="Add Today's Task">
+                      </div>
+
+                      <!-- Section for checking completed activity -->
+                      <div class="panel-group">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" href="#collapse1">Activity</a>
+                            </h4>
+                          </div>
+                          <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body"> <img src="./assets/images/empty-checkbox (1).png" alt=""> Wash Hair today</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Section for detailed description of the activity -->
+                   <div class="col-md-5">
+                       <h3>Notes</h3>
+                   </div>
+               </div>
+           </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ </body>
+</html>
